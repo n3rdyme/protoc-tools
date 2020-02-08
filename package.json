@@ -1,0 +1,41 @@
+{
+  "name": "protoc-tools",
+  "version": "3.0.2",
+  "description": "NPM package for installing protoc command-line tools for osx and linux",
+  "os" : [ "darwin", "linux" ],
+  "cpu" : [ "x64", "x32", "ia32" ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n3rdyme/protoc-tools.git"
+  },
+  "keywords": [
+    "grpc",
+    "protobuffers",
+    "protoc",
+    "proto",
+    "tools"
+  ],
+  "author": "Roger Knapp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n3rdyme/protoc-tools/issues"
+  },
+  "homepage": "https://github.com/n3rdyme/protoc-tools#readme",
+  "bin": {
+    "protoc": "bin/protoc-tools/bin/protoc"
+  },
+  "files": [
+    "config.js",
+    "install.js"
+  ],
+  "scripts": {
+    "preinstall": "node install.js",
+    "prepack": "rm -r ./bin/"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "unzipper": "^0.10.8"
+  }
+}
