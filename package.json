@@ -30,8 +30,7 @@
     "install.js"
   ],
   "scripts": {
-    "preinstall": "node install.js",
-    "prepack": "rm -r ./bin/"
+    "preinstall": "node install.js"
   },
   "dependencies": {
     "request": "^2.88.0",
