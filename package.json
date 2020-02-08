@@ -1,6 +1,6 @@
 {
   "name": "protoc-tools",
-  "version": "3.1.0",
+  "version": "3.11.3",
   "description": "NPM package for installing protoc command-line tools for osx and linux",
   "os" : [ "darwin", "linux" ],
   "cpu" : [ "x64", "x32", "ia32" ],
@@ -30,7 +30,8 @@
     "install.js"
   ],
   "scripts": {
-    "preinstall": "node install.js"
+    "preinstall": "node install.js",
+    "prepack": "(rm -r ./tools/ || true)"
   },
   "dependencies": {
     "request": "^2.88.0",
