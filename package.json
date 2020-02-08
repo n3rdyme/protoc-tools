@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/n3rdyme/protoc-tools#readme",
   "bin": {
-    "protoc": "bin/protoc-tools/bin/protoc"
+    "protoc": "tools/protoc-tools/bin/protoc"
   },
   "files": [
     "config.js",
